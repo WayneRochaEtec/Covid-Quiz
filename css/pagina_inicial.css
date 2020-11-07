@@ -1,8 +1,6 @@
 @charset "UTF-8";
 
 body {
-    margin: 0px;
-    padding: 0px;
     border: border-box;
     background-image: url(../img/fundo.jpg);
     background-repeat: no-repeat;
@@ -23,6 +21,7 @@ main {
 }
 #nome {
     font-size: 1.5em;
+    text-align: center;
     padding: 10px;
     margin: 20px;
     outline: none;
@@ -34,14 +33,21 @@ main {
 }
 button {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 2em;
+    font-size: 2rem;
     width: 30vw;
     height: 5vw;
     border: none;
     border-radius: 5px;
-    background-color: rgb(96, 219, 39);
+}
+button:disabled{
+    background-color: rgb(127, 226, 81);
+    color: #8a8a8a;
+}
+button:enabled {
+    color: #2a2a2a;
+    background-color: rgb(97, 231, 36);
     transition: ease-in-out .2s;
 }
-button:hover {
-    filter: saturate(1.4);
+button:enabled:hover {
+    background-color: rgb(65, 156, 22);
 }

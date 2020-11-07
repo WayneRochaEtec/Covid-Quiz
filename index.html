@@ -4,21 +4,22 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/pagina_inicial.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tela inicial - BETA</title>
+    <title>Covid Quiz</title>
 </head>
 <body>
     <main>
         <h1 class="titulo">Covid quiz</h1>
-        <input id="nome" type="text" placeholder="Seu nome">
-        <button onclick="ranking();">começar</button>
+        <input id="nome" type="text" placeholder="Seu nome" autocomplete="off" onblur="permitir();">
+        <button id="comecar" disabled>começar</button>
     </main>
     <script lang="javascript">
-        function ranking() {
-            //Por enquanto só faz o redirecionamento
-            //depois será colocado a função de ranking
-
-            if (document.getElementById('nome').value = "") {
-                window.location.href = "https://www.horadecodar.com.br";
+        //essa função só deixa o botão habilitado, caso tenha um algo dentro do input. a pessoa não vai poder continuar sem colocar algo.
+        function permitir() {
+            if (document.getElementById('nome').value != "") {
+                document.getElementById('comecar').disabled = false;
+            }
+            else {
+                document.getElementById('comecar').disabled = true;
             }
         }
     </script>
