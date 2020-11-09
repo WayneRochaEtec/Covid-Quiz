@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/pagina_inicial.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/permisao.js"></script>
     <title>Covid Quiz</title>
 </head>
 <body>
@@ -12,16 +13,5 @@
         <input id="nome" type="text" placeholder="Seu nome" autocomplete="off" onblur="permitir();">
         <button id="comecar" disabled>começar</button>
     </main>
-    <script lang="javascript">
-        //essa função só deixa o botão habilitado, caso tenha um algo dentro do input. a pessoa não vai poder continuar sem colocar algo.
-        function permitir() {
-            if (document.getElementById('nome').value != "") {
-                document.getElementById('comecar').disabled = false;
-            }
-            else {
-                document.getElementById('comecar').disabled = true;
-            }
-        }
-    </script>
 </body>
 </html>
