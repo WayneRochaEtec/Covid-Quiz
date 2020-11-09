@@ -1,10 +1,12 @@
 //essa função só deixa o botão habilitado, caso tenha um algo dentro do input. a pessoa não vai poder continuar sem colocar algo.
 
 function permitir() {
-    if (document.getElementById('nome').value != "") {
-        document.getElementById('comecar').disabled = false;
+    let caixa = document.getElementById('nome')
+    let botao = document.getElementById('comecar')
+    if (caixa.value != "") {
+        botao.disabled = false;
     }
     else {
-        document.getElementById('comecar').disabled = true;
+        botao.disabled = true;
     }
 }
