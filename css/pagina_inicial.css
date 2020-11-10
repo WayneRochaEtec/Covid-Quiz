@@ -1,11 +1,12 @@
 @charset "UTF-8";
 
 body {
-    background-image: url(../img/fundo.jpg);
+    background-image: url(../img/fundo.png);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
+    opacity: 100%;
 }
 main {
     display: flex;
@@ -13,11 +14,26 @@ main {
     align-items: center;
     margin-top: 10vh;
 }
-.titulo {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 3em;
-    font-weight: bolder;
-    white-space: nowrap;
+#titulo {
+    width:30vw;
+    animation: anima_titulo 1s infinite;
+}
+@keyframes anima_titulo {
+    0% {
+        transform: rotate(2.5deg);
+    }
+    30% {
+        transform: rotate(-1.5deg);
+    }
+    50% {
+        transform: rotate(2deg);
+    }
+    50% {
+        transform: rotate(-1deg);
+    }
+    100% {
+        transform: rotate(2deg);
+    }
 }
 #nome {
     font-size: 1.5em;
@@ -53,16 +69,21 @@ button {
         width: 55vw;
         height: 5vh;
     }
+    #titulo {
+        width: 60vw;
+    }
 }
 button:disabled{
-    background-color: rgb(127, 226, 81);
-    color: #8a8a8a;
+    background-color: rgb(177, 99, 99);
+    color: #5c5c5c;
 }
 button:enabled {
-    color: #2a2a2a;
-    background-color: rgb(97, 231, 36);
+    color: #000000;
+    background-color: rgb(199, 53, 53);
     transition: ease-in-out .2s;
 }
 button:enabled:hover {
-    background-color: rgb(65, 156, 22);
+    background-color: rgb(219, 35, 35);
+    transform: scale(1.02);
+    font-weight: bold;
 }
