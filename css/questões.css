@@ -2,11 +2,12 @@
 
 body {
     border: border-box;
-
 }
-.questoes {
+.q {
     display: none;
-
 }
 
 /*questões*/
+#questao1 {
+    display: flex;
+}
