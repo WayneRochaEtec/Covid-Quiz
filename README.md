@@ -36,3 +36,55 @@ function permitir() {
     }
 }
 ```
+
+* Embaralhando as questões
+
+Para embaralhar as questões foi usado um script em Jquery que guarda todas as questões em um `array` e os embaralha de forma aleatória usando o métodos `Math.floor()` e `Math.random()`.
+
+```JS
+var questoes = $(".questoes");
+for (let i = 0; i < questoes.length; i++) {
+    let lugar = Math.floor(Math.random() * questoes.length -1) + 1;
+    let lugar2 = Math.floor(Math.random() * questoes.length -1) + 1;
+    questoes.eq(lugar).before(questoes.eq(lugar2));
+}
+```
+
+* trocando as questões
+
+Para mostrar uma questão por vez, o JS guarda todas as questões em um `array`, e ao clicar em uma alternativa o `display` esconde a alternativa e mostra a próxima até que acabem as questões.
+
+```JS
+var questoes = document.getElementsByClassName('questoes');
+var Nquestao = 0;
+function Proximaquestao(){
+    if (Nquestao === 9){
+        resultado();
+    }
+    else{
+        questoes[Nquestao].style.display = 'none';
+        questoes[Nquestao + 1].style.display = 'block';
+        Nquestao += 1;
+    }
+}
+```
+
+* Computando pontos
+
+a função recebe o paramentro booleano "certo", que quando for passado para esse parametro o valor True, é incrementado um ponto.
+
+```HTML
+<article class="questoes">
+    <button onclick="Proximaquestao()">errado</button>
+    <button onclick="Proximaquestao(true)">certo</button>
+</article>
+```
+
+```JS
+var pontuacao = 0;
+function Proximaquestao(certo){
+    if (certo){
+        pontuacao += 1;
+    }
+}
+```
