@@ -1,13 +1,14 @@
 @charset "UTF-8";
 
 body {
-    border: border-box;
+    background-color: aliceblue;
+    margin: 0px;
+    padding: 0px;
 }
-.q {
+.questoes {
     display: none;
 }
-
-/*questões*/
-#questao1 {
-    display: flex;
+#resultados {
+    display: none;
 }
+/*questões*/
