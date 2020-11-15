@@ -5,7 +5,7 @@ function Proximaquestao(certo){
     if (certo){
         pontuacao += 1;
     }
-    if (Nquestao === 9){
+    if (Nquestao === questoes.length){
         resultado();
     }
     else{

@@ -12,9 +12,10 @@ O objetivo do quiz é acertar o máximo de alternativas possivel. Quanto mais po
 
 * Obrigando a digitar o nome
 
+
 É preciso um script que não deixe o úsuario continuar sem digitar um nick no input.
 
-Para isso foi feito um script que habilita e desabilita o botão
+Para isso foi feito um script que habilita e desabilita o botão.
 
 **HTML**
 ```html
@@ -25,19 +26,49 @@ Para isso foi feito um script que habilita e desabilita o botão
 
 **JavaScript**
 ```js
-function permitir() {
-    let caixa = document.getElementById('nome')
+let allowredirect;
+function permitir(){
+    let caixa = document.getElementById('nome').value.trim();
     let botao = document.getElementById('comecar')
-    if (caixa.value != "") {
+    if (caixa != ""){
         botao.disabled = false;
+        allowredirect = true;
     }
-    else {
+    else{
         botao.disabled = true;
+        allowredirect = false;
     }
 }
 ```
 
+<br>
+
+* passando dados usando o Storage
+
+<br>
+
+O HTML5 tem novo um recurso chamado de [Storage](https://www.html5rocks.com/en/features/storage) que permite que um dado seja guardado do lado do cliente. Isso faz que nessa situação não precisemos ter um back-end.<br><br>
+E esse foi o método usado para passar o nome da pagina inicial para a página do quiz.
+
+```js
+//Usa o Storage para guardar o dado
+function redirect(){
+    let nome = JSON.stringify(document.getElementById('nome').value);
+    sessionStorage.setItem('nome', nome);
+}
+
+//Usa o Storage para resgatar o dado guardado
+function resgatarnome(){
+    let nome = JSON.parse(sessionStorage.getItem('nome'));
+}
+```
+
+<br>
+
 * Embaralhando as questões
+
+<br>
+
 
 Para embaralhar as questões foi usado um script em Jquery que guarda todas as questões em um `array` e os embaralha de forma aleatória usando o métodos `Math.floor()` e `Math.random()`.
 
@@ -58,7 +89,7 @@ Para mostrar uma questão por vez, o JS guarda todas as questões em um `array`,
 var questoes = document.getElementsByClassName('questoes');
 var Nquestao = 0;
 function Proximaquestao(){
-    if (Nquestao === 9){
+    if (Nquestao === questoes.lenght){
         resultado();
     }
     else{
@@ -75,8 +106,8 @@ a função recebe o paramentro booleano "certo", que quando for passado para ess
 
 ```HTML
 <article class="questoes">
-    <button onclick="Proximaquestao()">errado</button>
-    <button onclick="Proximaquestao(true)">certo</button>
+    <button onclick="Proximaquestao()">alternativa errada</button>
+    <button onclick="Proximaquestao(true)">alternativa certa</button>
 </article>
 ```
 
