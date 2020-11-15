@@ -6,11 +6,12 @@
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/questões.css">
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script defer src="js/NameTransferRedirect.js"></script>
     <script defer src="js/EmbaralharDivs.js"></script>
     <script src="js/trocarquestao.js"></script>
     <title>Covid-Quiz - Questão 1</title>
 </head>
-<body>
+<body onload="resgatarnome();">
     <main>
         <section>
             <article class="questoes">
@@ -44,7 +45,7 @@
                 
             </article>
             <article id="resultados">
-                .
+                <p id="msg"></p>
             </article>
         </section>
     </main>

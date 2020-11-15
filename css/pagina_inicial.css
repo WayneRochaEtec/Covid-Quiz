@@ -7,6 +7,10 @@ body {
     background-attachment: fixed;
     background-size: cover;
 }
+a {
+    text-decoration: none;
+    color: inherit;
+}
 main {
     display: flex;
     flex-direction: column;
@@ -60,6 +64,7 @@ button {
     height: 5vw;
     border: none;
     border-radius: 5px;
+    margin-bottom: 5vh;
 }
 @media (max-width:450px){
     button {
@@ -88,4 +93,7 @@ button:enabled:hover {
     background-color: rgb(219, 35, 35);
     transform: scale(1.02);
     font-weight: bold;
+}
+button#instrucoes {
+    background-color: rgb(110, 97, 97);
 }
