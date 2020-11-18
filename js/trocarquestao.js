@@ -19,13 +19,14 @@ function resultado(){
     top.document.title = ("Covid-Quiz - Resultados");
     questoes[Nquestao].style.display = 'none';
     document.getElementById('resultados').style.display = 'flex';
+    //temporario
     if (pontuacao < 4) {
-        document.getElementById('msg').innerHTML += ', ruim';
+        document.getElementById('msg').innerHTML += '\nEstado: ruim';
     }
     if (pontuacao >= 4 && pontuacao <= 7){
-        document.getElementById('msg').innerHTML += ', fica esperto!';
+        document.getElementById('msg').innerHTML += '\nEstado: medio!';
     }
     if (pontuacao > 7) {
-        document.getElementById('msg').innerHTML += ', 2 palavras..\nPara-bens 👏👏)';
+        document.getElementById('msg').innerHTML += '\nEstado: 2 palavras..Para-bens 👏👏)';
     }
 }
