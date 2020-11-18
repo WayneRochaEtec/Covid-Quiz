@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
+/*config inicial*/
 body {
-    background-color: aliceblue;
     margin: 0px;
 }
 .questoes {
@@ -10,4 +10,75 @@ body {
 #resultados {
     display: none;
 }
+
 /*questões*/
+p {
+    font-size: 1.5em;
+    font-family: arial, sans-serif;
+    margin-bottom: 10vh;
+}
+.question-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0vh;
+    height: 80vh;
+    width: 80vw;
+    padding: 4vmin;
+}
+.alternativas {
+    padding: 0px;
+    display: grid;
+    flex-direction: column;
+    grid-template-columns: repeat(2, auto);
+    gap: 2vw;
+}
+button {
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: #0F6499; /*#043959*/
+    color: white;
+    padding: 14px;
+    font-size: 1.2em;
+}
+button:hover {
+    cursor: pointer;
+}
+.img__alt {
+    transform: scale(.6);
+    transition: all .2s;
+    margin: -3vw;
+}
+.img__alt:hover {
+    cursor: pointer;
+    transform: scale(.7);
+}
+#questao1{
+    cursor: pointer;
+}
+b:hover {
+    transition: all .1s;
+    color: #0F6499;
+}
+@media(max-width:500px){
+    #questao2 {
+        margin-top: 5vh;
+    }
+    p {
+        margin-bottom: 5vh;
+    }
+    #questao3 button{
+        padding: 1px;
+    }
+    .img__alt {
+        transform: scale(.5);
+        margin: -5vw;
+    }
+    .img__alt:hover {
+        transform: scale(.6);
+    }
+}

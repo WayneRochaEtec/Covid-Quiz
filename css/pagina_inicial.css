@@ -65,6 +65,12 @@ button {
     border: none;
     border-radius: 5px;
     margin-bottom: 5vh;
+    transition: all .2s;
+}
+button:hover {
+    transform: scale(1.02);
+    font-weight: bold;
+    filter: saturate(130%);
 }
 @media (max-width:450px){
     button {
@@ -80,20 +86,22 @@ button {
         width: 60vw;
     }
 }
-button:disabled{
-    background-color: rgb(177, 99, 99);
+#comecar:disabled{
+    background-color: rgb(196, 87, 87);
     color: #5c5c5c;
 }
-button:enabled {
+#comecar:disabled:hover {
+    transform: scale(1);
+    font-weight: initial;
+    filter: saturate(100%);
+}
+#comecar:enabled {
     color: #000000;
     background-color: rgb(199, 53, 53);
-    transition: ease-in-out .2s;
 }
-button:enabled:hover {
-    background-color: rgb(219, 35, 35);
-    transform: scale(1.02);
-    font-weight: bold;
+#instrucoes {
+    background-color: #0D8CDB;
 }
-button#instrucoes {
-    background-color: rgb(110, 97, 97);
+#creditos {
+    background-color: #0D8CDB;
 }
