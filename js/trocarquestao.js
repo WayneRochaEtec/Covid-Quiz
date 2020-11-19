@@ -1,6 +1,9 @@
 var questoes = document.getElementsByClassName('questoes');
 var pontuacao = 0;
 var Nquestao = 0;
+function iniciar(){
+    questoes[0].style.display = 'flex';
+}
 function Proximaquestao(certo){
     if (certo){
         pontuacao += 1;
@@ -10,7 +13,7 @@ function Proximaquestao(certo){
     }
     else{
         questoes[Nquestao].style.display = 'none';
-        questoes[Nquestao + 1].style.display = 'block';
+        questoes[Nquestao + 1].style.display = 'flex';
         Nquestao += 1;
         top.document.title = "Covid-Quiz - Questão " + (Nquestao + 1);
     }

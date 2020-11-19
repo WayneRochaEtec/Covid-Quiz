@@ -4,13 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/questões.css">
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script defer src="js/NameTransferRedirect.js"></script>
-    <script defer src="js/EmbaralharDivs.js"></script>
-    <script src="js/trocarquestao.js"></script>
     <title>Covid-Quiz - Questão 1</title>
 </head>
-<body onload="resgatarnome();">
+<body onload="(resgatarnome(), iniciar());">
     <main>
         <section>
             <article class="questoes">
@@ -129,5 +125,9 @@
             </article>
         </section>
     </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/EmbaralharDivs.js"></script>
+    <script src="js/trocarquestao.js"></script>
+    <script src="js/NameTransferRedirect.js"></script>
 </body>
 </html>
