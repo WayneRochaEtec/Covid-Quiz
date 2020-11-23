@@ -134,6 +134,13 @@ b:hover {
     #resultados{
         font-size: .8em;
     }
+    .estado__img {
+        position: absolute;
+        top: 10vh;
+        left: 1vw;
+        transform: scale(.2);
+        display: none;
+    }
 }
 /*final*/
 #estado {
@@ -142,10 +149,6 @@ b:hover {
     top: 5vh;
     width: 100vw;
     text-align: center;
-}
-#estado__img {
-    width: 100px;
-    margin-left: 2vw;
 }
 #mensagem {
     position: absolute;
