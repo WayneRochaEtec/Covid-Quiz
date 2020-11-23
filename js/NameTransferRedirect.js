@@ -23,5 +23,5 @@ function redirect(){
 }
 function resgatarnome(){
     let nome = JSON.parse(sessionStorage.getItem('nome'));
-    document.getElementById('msg').innerHTML = nome;
+    document.getElementById('estado').innerHTML = nome;
 }

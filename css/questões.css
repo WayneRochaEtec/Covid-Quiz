@@ -1,5 +1,8 @@
 @charset "UTF-8";
-
+@font-face {
+    font-family: final;
+    src: url(../fonts/8-bit-hud.ttf);
+}
 /*config inicial*/
 body {
     margin: 0px;
@@ -13,9 +16,14 @@ body {
     opacity: 1;
 }
 .questoes-invisivel {
-    opacity: 0;
+    display: none;
 }
 #resultados {
+    color: white;
+    width: 100vw;
+    height: 100vh;
+    background-color: #26264d;
+    font-family: 'fonte';
     display: none;
 }
 /*questões*/
@@ -42,11 +50,6 @@ p {
     flex-direction: column;
     grid-template-columns: repeat(2, auto);
     gap: 2vw;
-}
-.certo {
-    padding: 5px;
-    background-color: rgba(80, 255, 11, 0.616);
-    border-radius: 5px;
 }
 button {
     outline: none;
@@ -128,4 +131,42 @@ b:hover {
     .img__alt:hover {
         transform: scale(.6);
     }
+    #resultados{
+        font-size: .8em;
+    }
+}
+/*final*/
+#estado {
+    font-family: final;
+    position: absolute;
+    top: 5vh;
+    width: 100vw;
+    text-align: center;
+}
+#estado__img {
+    width: 100px;
+    margin-left: 2vw;
+}
+#mensagem {
+    position: absolute;
+    font-family: final;
+    top: 20vh;
+    width: 80vw;
+    text-align: center;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+#pontuacao {
+    position: absolute;
+    font-family: final;
+    top: 70vh;
+    left: 20vw;
+    letter-spacing: 10px;
+}
+.estado__img {
+    position: absolute;
+    top: 10vh;
+    left: 20vw;
+    transform: scale(.4);
+    display: none;
 }

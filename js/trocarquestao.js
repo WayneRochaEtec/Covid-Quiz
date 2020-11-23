@@ -1,6 +1,7 @@
 var questoes = document.getElementsByClassName('questoes');
 var pontuacao = 0;
 var Nquestao = 0;
+
 //função principal
 function Proximaquestao(certo){
     if (certo){
@@ -24,15 +25,17 @@ function resultado(){
     top.document.title = ("Covid-Quiz - Resultados");
     questoes[Nquestao].style.display = 'none';
     document.getElementById('resultados').style.display = 'flex';
-    //temporario
     if (pontuacao < 4) {
-        document.getElementById('msg').innerHTML += ', Você foi infectado e não resistiu';
+        document.getElementById('mensagem').innerHTML = 'Voce foi infectado e nao resistiu';
+        document.getElementById('final1').style.display = 'block';
     }
     if (pontuacao >= 4 && pontuacao <= 7){
-        document.getElementById('msg').innerHTML += ', Você foi infectado. Mas sobreviveu';
-
+        document.getElementById('mensagem').innerHTML = 'Voce foi infectado. Mas sobreviveu';
+        document.getElementById('final2').style.display = 'block';
     }
     if (pontuacao > 7) {
-        document.getElementById('msg').innerHTML += ', Você não se infectou durante a pandemia!';
+        document.getElementById('mensagem').innerHTML = 'Voce não se infectou durante a pandemia!';
+        document.getElementById('final3').style.display = 'block';
     }
+    document.getElementById('pontuacao').innerHTML = pontuacao + "/10"
 }
