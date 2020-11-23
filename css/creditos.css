@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+	body {
+	margin: 0px;
+	background-image: url(../img/fundo.png);
+	background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+	h2 {
+		font-family: arial, sans-serif;
+		font-size: 50px;
+		color: yellow;
+		margin: 1px;
+		border-bottom: 1px solid;
+		border-color: red;
+		
+		
+		}
+		h1 {
+		font-family: arial, sans-serif;
+		font-size: 25px;
+		color: yellow;
+		margin: 1px;
+		
+		}
+	p1 {
+		font-family: arial, sans-serif;
+		font-size: 40px;
+		margin: 1px;
+		
+		border-bottom: 1px solid;
+		border-color: black;
+		border-spacing: 100px 100px;
+		}
+	p2 {
+		font-family: arial, sans-serif;
+		font-size: 20px;
+		margin: 1px;
+		border-bottom: 1px solid;
+		border-color: black;
+		}
+
+	

@@ -8,10 +8,16 @@ body {
 .questoes {
     display: none;
 }
+.questoes-visivel {
+    display: flex;
+    opacity: 1;
+}
+.questoes-invisivel {
+    opacity: 0;
+}
 #resultados {
     display: none;
 }
-
 /*questões*/
 p {
     font-size: 1.5em;
@@ -37,6 +43,11 @@ p {
     grid-template-columns: repeat(2, auto);
     gap: 2vw;
 }
+.certo {
+    padding: 5px;
+    background-color: rgba(80, 255, 11, 0.616);
+    border-radius: 5px;
+}
 button {
     outline: none;
     border: none;
@@ -46,7 +57,7 @@ button {
     padding: 14px;
     font-size: 1.2em;
     transition: all .2s;
-    
+    user-select: none;
 }
 button:hover {
     cursor: pointer;
@@ -57,12 +68,13 @@ button:hover {
     transform: scale(.6);
     transition: all .2s;
     margin: -3vw;
+    user-select: none;
 }
 .img__alt:hover {
     cursor: pointer;
     transform: scale(.7);
 }
-#questao1{
+#todas{
     cursor: pointer;
 }
 b:hover {
@@ -85,6 +97,10 @@ b:hover {
         font-size: .8em;
         padding: 20px;
     }
+    #questao5 button{
+        font-size: .8em;
+        padding: 15px;
+    }
     #questao6 button{
         font-size: 1em;
         padding: 15px;
@@ -92,6 +108,12 @@ b:hover {
     #questao7 button{
         font-size: 1em;
         padding: 15px;
+    }
+    #questao5 {
+        font-size: .8em;
+    }
+    #questao7 {
+        margin-top: 5vh;
     }
     p {
         margin-bottom: 5vh;

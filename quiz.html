@@ -10,8 +10,8 @@
     <main>
         <section>
             <article class="questoes">
-                <div class="question-box">
-                    <p>Dentre <b id="questao1" onclick="Proximaquestao(true);">todas</b> as alternativas abaixo, qual delas se encontra como meio de prevenir o covid?</p>
+                <div class="question-box" id="questao1">
+                    <p>Dentre <b id="todas" onclick="Proximaquestao(true);">todas</b> as alternativas abaixo, qual delas se encontra como meio de prevenir o covid?</p>
                     <div class="alternativas">
                         <button onclick="Proximaquestao();">Usar máscara</button>
                         <button onclick="Proximaquestao();">Lavar as mãos</button> 
@@ -26,7 +26,7 @@
                     <div class="alternativas">
                         <img class="img__alt" onclick="Proximaquestao();" src="img/questao2/1.png" alt="imagem: Cobrindo apenas a boca com folga nas pontas">
                         <img class="img__alt" onclick="Proximaquestao();" src="img/questao2/2.png" alt="imagem: Cobrir apenas o nariz, no manuseio pegar no tecido">
-                        <img class="img__alt" onclick="Proximaquestao(true);" src="img/questao2/3.png" alt="Cobrir nariz e boca totalmente,sem folgas nas pontas e no manuseio pegar no tecido">
+                        <img class="img__alt c" onclick="Proximaquestao(true);" src="img/questao2/3.png" alt="Cobrir nariz e boca totalmente,sem folgas nas pontas e no manuseio pegar no tecido">
                         <img class="img__alt" onclick="Proximaquestao();" src="img/questao2/4.png" alt="imagem: Cobrir nariz e boca totalmente,sem folgas e no manuseio pegar sempre no elástico">
                     </div>
                 </div>
@@ -35,10 +35,10 @@
                 <div class="question-box" id="questao3">
                     <p>O que fazer se começar a sentir os sintomas do Covid?</p>
                     <div class="alternativas">
-                        <button onclick="Proximaquestao();">Procurar na Internet</button>
-                        <button onclick="Proximaquestao(true);">Procurar Médico no primeiro sintoma</button>
-                        <button onclick="Proximaquestao();">Procurar Médico quando sintomas graves aparecerem.</button>
-                        <button onclick="Proximaquestao();">Auto medicação</button>
+                        <img class="img__alt" onclick="Proximaquestao();" src="img/questao3/1.png" alt="Procurar na Internet">
+                        <img class="img__alt" onclick="Proximaquestao();" src="img/questao3/2.jpeg" alt="Procurar Médico no primeiro sintoma">
+                        <img class="img__alt" onclick="Proximaquestao(true);" src="img/questao3/3.png" alt="Procurar Médico quando sintomas graves aparecerem">
+                        <img class="img__alt" onclick="Proximaquestao();" src="img/questao3/4.png" alt="Auto medicação"></button>
                     </div>
                 </div>
             </article>
@@ -46,7 +46,7 @@
                 <div class="question-box" id="questao4">
                     <p>Quais são os sintomas que alertam o possível contagio da doença?</p>
                     <div class="alternativas">
-                        <button onclick="Proximaquestao();">Febre,tosse,dificultade para respirar,fadiga,cansaço, coriza e congestão nasal</button>
+                        <button onclick="Proximaquestao(true);">Febre,tosse,dificultade para respirar,fadiga,cansaço, coriza e congestão nasal</button>
                         <button onclick="Proximaquestao();">Tosse, congestão nasal, coriza e dor de garganta</button>
                         <button onclick="Proximaquestao();">Calafrios,febre e dor de cabeça</button>
                         <button onclick="Proximaquestao();">Batimento cardíaco acelerado, palidez , tontura e vertigem</button>
@@ -59,9 +59,9 @@
                     <p>Qual é o modo incorreto de prevenção à covid 19?</p>
                     <div class="alternativas">
                         <button onclick="Proximaquestao();">usar mascaras</button>
-                        <button onclick="Proximaquestao();">lave suas mãos com freqüência. Use sabão e água ou álcool em gel.</button>
-                        <button onclick="Proximaquestao();">Não fique em casa se você se sentir indisposto.</button>
-                        <button onclick="Proximaquestao();">mantenha uma distância segura de pessoas que estiverem tossindo ou espirrando.</button>
+                        <button onclick="Proximaquestao();">lave suas mãos com freqüência. Use sabão e água ou álcool em gel</button>
+                        <button onclick="Proximaquestao(true);">Não ficar em casa se você se sentir indisposto</button>
+                        <button onclick="Proximaquestao();">mantenha uma distância segura de pessoas que estiverem tossindo ou espirrando</button>
                     </div>    
                 </div>
             </article>
@@ -69,10 +69,10 @@
                 <div class="question-box" id="questao6">
                     <p>O grupo de risco da doença é composto por?</p>
                     <div class="alternativas">
-                        <button onclick="Proximaquestao();">fumantes,diabéticos e hipertensos</button>
-                        <button onclick="Proximaquestao();">idosos e crianças abaixo de 5 anos</button>
-                        <button onclick="Proximaquestao();">Gestantes, idosos, asmáticos, hipertensos e diabéticos</button>
-                        <button onclick="Proximaquestao();">Pessoas com falta de alimentação e exercícios diários</button>
+                        <img onclick="Proximaquestao();" src="img/questao6/1.jpeg" alt="0 - 9 anos " class="img__alt">
+                        <img onclick="Proximaquestao();" src="img/questao6/2.jpeg" alt="10 - 29 anos " class="img__alt">
+                        <img onclick="Proximaquestao();" src="img/questao6/3.jpeg" alt="30 - 59 anos" class="img__alt">
+                        <img onclick="Proximaquestao();" src="img/questao6/4.jpeg" alt="mais de 60 anos " class="img__alt">
                     </div>     
                 </div>
             </article>
@@ -126,8 +126,8 @@
         </section>
     </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="js/EmbaralharDivs.js"></script>
-    <script src="js/trocarquestao.js"></script>
+    <script rc="js/EmbaralharDivs.js"></script>
     <script src="js/NameTransferRedirect.js"></script>
+    <script src="js/trocarquestao.js"></script>
 </body>
 </html>

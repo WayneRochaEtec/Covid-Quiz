@@ -1,0 +1,37 @@
+@charset "UTF-8" ;
+
+	body {
+	background-image: url(../img/fundo.png);
+	background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+	h2 {
+		
+		margin: 1px;
+		position: absolute;
+		left: 200px;
+		top: 335px;
+		border-bottom: 1px solid;
+		border-color: black;
+		}
+	p {
+		  font-size: 20px;
+		margin: 1px;
+		position: absolute;
+		left: 200px;
+		top: 500px;
+		border: 1px solid;
+		border-color: black;
+		border-spacing: 100px 100px;
+		background-color: rgb(238, 238, 238);
+		}
+	img {
+		
+		position: absolute;
+		left: 200px;
+		top: 5px;
+		}
+	
+}
