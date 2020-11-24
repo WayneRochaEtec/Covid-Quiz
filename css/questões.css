@@ -22,7 +22,7 @@ body {
     color: white;
     width: 100vw;
     height: 100vh;
-    background-color: #26264d;
+    background-color: #1F2140;
     font-family: 'fonte';
     display: none;
 }
@@ -136,9 +136,9 @@ b:hover {
     }
     .estado__img {
         position: absolute;
-        top: 10vh;
-        left: 1vw;
-        transform: scale(.2);
+        top: 0px;
+        left: 0px;
+        transform: scale(.1);
         display: none;
     }
 }
@@ -172,4 +172,5 @@ b:hover {
     left: 20vw;
     transform: scale(.4);
     display: none;
+    z-index: 1;
 }

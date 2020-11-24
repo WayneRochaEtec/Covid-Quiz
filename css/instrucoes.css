@@ -7,29 +7,39 @@
     background-attachment: fixed;
     background-size: cover;
 }
-	h2 {
-		
-		margin: 1px;
-		position: absolute;
-		left: 200px;
-		top: 335px;
-		border-bottom: 1px solid;
-		border-color: black;
-		}
-	p {
-		  font-size: 20px;
-		margin: 1px;
-		position: absolute;
-		left: 200px;
-		top: 500px;
-		border: 1px solid;
-		border-color: black;
-		border-spacing: 100px 100px;
-		background-color: rgb(238, 238, 238);
-		}
-	img {
-		
-		position: absolute;
-		left: 200px;
-		top: 5px;
-		}
+
+div {
+	width: 900px;
+	background-color: #FFFFFF;
+	margin: 40px auto 10px auto;
+	padding: 40px;
+	border-radius: 1em;
+}
+
+div h2{
+	font-family: cooper black;
+	font-size: 24pt;
+	color: #B52E2B;
+	text-align: center;
+}
+
+div p{
+	font-family: Book Antiqua;
+	font-size: 13pt;
+}
+
+
+img {
+	position: center;	
+	left: 200px;
+	top: 5px;
+	}
+	
+footer#ropape {
+	clear: both;
+	border-top: 1px rgb(189,146,47) solid;
+}
+
+footer#rodape {
+	text-align: center;
+}

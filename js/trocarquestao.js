@@ -34,7 +34,7 @@ function resultado(){
         document.getElementById('final2').style.display = 'block';
     }
     if (pontuacao > 7) {
-        document.getElementById('mensagem').innerHTML = 'Voce não se infectou durante a pandemia!';
+        document.getElementById('mensagem').innerHTML = 'Voce nao se infectou durante a pandemia!';
         document.getElementById('final3').style.display = 'block';
     }
     document.getElementById('pontuacao').innerHTML = pontuacao + "/10"
