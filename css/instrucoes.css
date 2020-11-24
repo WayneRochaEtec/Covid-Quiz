@@ -17,14 +17,14 @@ div {
 }
 
 div h2{
-	font-family: cooper black;
+	font-family: arial, sans-serif;
 	font-size: 24pt;
 	color: #B52E2B;
-	text-align: center;
+	border-bottom: 1px solid #B52E2B;
 }
 
 div p{
-	font-family: Book Antiqua;
+    font-family: arial, sans-serif;
 	font-size: 13pt;
 }
 

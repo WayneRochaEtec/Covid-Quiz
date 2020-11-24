@@ -22,7 +22,7 @@ body {
     color: white;
     width: 100vw;
     height: 100vh;
-    background-color: #1F2140;
+    background-color: #181834;
     font-family: 'fonte';
     display: none;
 }
@@ -149,6 +149,7 @@ b:hover {
     top: 5vh;
     width: 100vw;
     text-align: center;
+    z-index: 1;
 }
 #mensagem {
     position: absolute;
@@ -158,6 +159,7 @@ b:hover {
     text-align: center;
     margin-left: 10vw;
     margin-right: 10vw;
+    z-index: 1;
 }
 #pontuacao {
     position: absolute;
@@ -165,6 +167,7 @@ b:hover {
     top: 70vh;
     left: 20vw;
     letter-spacing: 10px;
+    z-index: 1;
 }
 .estado__img {
     position: absolute;
@@ -172,5 +175,8 @@ b:hover {
     left: 20vw;
     transform: scale(.4);
     display: none;
-    z-index: 1;
+   z-index: 0;
+}
+#covides{
+    transform: scale(.6);
 }

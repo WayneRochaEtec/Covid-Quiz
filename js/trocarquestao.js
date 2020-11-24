@@ -1,6 +1,6 @@
 var questoes = document.getElementsByClassName('questoes');
-var pontuacao = 0;
-var Nquestao = 0;
+let pontuacao = 0;
+let Nquestao = 0;
 
 //função principal
 function Proximaquestao(certo){
@@ -25,17 +25,32 @@ function resultado(){
     top.document.title = ("Covid-Quiz - Resultados");
     questoes[Nquestao].style.display = 'none';
     document.getElementById('resultados').style.display = 'flex';
+    let estado = document.getElementById('estado');
+    let mensagem = document.getElementById('mensagem');
+    let img_finais = [
+        document.getElementById('final1'),
+        document.getElementById('final2'),
+        document.getElementById('final3')
+    ];
+    let covides = document.getElementById('covides');
     if (pontuacao < 4) {
-        document.getElementById('mensagem').innerHTML = 'Voce foi infectado e nao resistiu';
-        document.getElementById('final1').style.display = 'block';
+        mensagem.innerHTML = 'Voce foi infectado e nao resistiu';
+        img_finais[0].style.display = 'block';
+        estado.innerHTML = "Game-Over " + estado.innerText;
     }
     if (pontuacao >= 4 && pontuacao <= 7){
-        document.getElementById('mensagem').innerHTML = 'Voce foi infectado. Mas sobreviveu';
-        document.getElementById('final2').style.display = 'block';
+        mensagem.innerHTML = 'Voce foi infectado. Mas sobreviveu';
+        img_finais[1].style.display = 'block';
+        estado.innerHTML = "Muito bem " + estado.innerText;
     }
     if (pontuacao > 7) {
-        document.getElementById('mensagem').innerHTML = 'Voce nao se infectou durante a pandemia!';
-        document.getElementById('final3').style.display = 'block';
+        mensagem.innerHTML = 'Voce nao se infectou durante a pandemia!';
+        img_finais[2].style.display = 'block';
+        estado.innerHTML = "parabens " + estado.innerText + "!";
+        if (pontuacao === 10){
+            img_finais[2].style.display = 'none';
+            covides.style.display = 'block';
+        }
     }
     document.getElementById('pontuacao').innerHTML = pontuacao + "/10"
 }

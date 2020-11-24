@@ -12,14 +12,13 @@ O objetivo do quiz é acertar o máximo de alternativas possivel. Quanto mais po
 
 * Obrigando a digitar o nome
 
-
 É preciso um script que não deixe o úsuario continuar sem digitar um nick no input.
 
 Para isso foi feito um script que habilita e desabilita o botão.
 
 **HTML**
 ```html
-<input id="nome" type="text" onblur="permitir();">
+<input id="nome" type="text" oninput="permitir();">
 
 <button id="comecar" disabled>começar</button>
 ```
@@ -87,14 +86,15 @@ Para mostrar uma questão por vez, o JS guarda todas as questões em um `array`,
 
 ```JS
 var questoes = document.getElementsByClassName('questoes');
-var Nquestao = 0;
+let Nquestao = 0;
 function Proximaquestao(){
-    if (Nquestao === questoes.lenght){
+    if (Nquestao === questoes.length - 1){
         resultado();
     }
     else{
-        questoes[Nquestao].style.display = 'none';
-        questoes[Nquestao + 1].style.display = 'block';
+        questoes[Nquestao].classList.remove('questoes-visivel');
+        questoes[Nquestao].classList.add('questoes-invisivel');
+        questoes[Nquestao + 1].classList.add('questoes-visivel');
         Nquestao += 1;
     }
 }
@@ -112,7 +112,7 @@ a função recebe o paramentro booleano "certo", que quando for passado para ess
 ```
 
 ```JS
-var pontuacao = 0;
+let pontuacao = 0;
 function Proximaquestao(certo){
     if (certo){
         pontuacao += 1;
