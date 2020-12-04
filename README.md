@@ -1,8 +1,9 @@
 # Covid-Quiz
- 
+
+[Covid-Quiz.com](https://waynerocha.github.io/Covid-Quiz/)
 ## objetivo
 
-Trabalho escolar baseado na ideia do "Genio-quiz" feito pelo André Birnfield.
+Trabalho escolar feito por metade do 1º DS AMS - Etec ZL, baseado na ideia do "Genio-quiz" feito pelo André Birnfield.
 
 O objetivo do quiz é acertar o máximo de alternativas possivel. Quanto mais pontos forem feitos, mais conciente você é quanto aos cuidados do Covid-19.
 
