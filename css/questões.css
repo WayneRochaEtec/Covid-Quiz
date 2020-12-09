@@ -84,6 +84,46 @@ b:hover {
     transition: all .1s;
     color: #0F6499;
 }
+
+/*final*/
+#estado {
+    font-family: final;
+    position: absolute;
+    top: 5vh;
+    width: 100vw;
+    text-align: center;
+    z-index: 1;
+}
+#mensagem {
+    position: absolute;
+    font-family: final;
+    top: 20vh;
+    width: 80vw;
+    text-align: center;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    z-index: 1;
+}
+#pontuacao {
+    position: absolute;
+    font-family: final;
+    top: 70vh;
+    left: 20vw;
+    letter-spacing: 10px;
+    z-index: 1;
+}
+.estado__img {
+    position: absolute;
+    top: 10vh;
+    left: 20vw;
+    transform: scale(.4);
+    display: none;
+    z-index: 0;
+}
+#covides{
+    transform: scale(.6);
+}
+
 @media(max-width:500px){
     #questao2 {
         margin-top: 5vh;
@@ -136,47 +176,12 @@ b:hover {
     }
     .estado__img {
         position: absolute;
-        top: 0px;
-        left: 0px;
-        transform: scale(.1);
+        top: -5vh;
+        left: -85vw;
+        transform: scale(.2);
         display: none;
     }
-}
-/*final*/
-#estado {
-    font-family: final;
-    position: absolute;
-    top: 5vh;
-    width: 100vw;
-    text-align: center;
-    z-index: 1;
-}
-#mensagem {
-    position: absolute;
-    font-family: final;
-    top: 20vh;
-    width: 80vw;
-    text-align: center;
-    margin-left: 10vw;
-    margin-right: 10vw;
-    z-index: 1;
-}
-#pontuacao {
-    position: absolute;
-    font-family: final;
-    top: 70vh;
-    left: 20vw;
-    letter-spacing: 10px;
-    z-index: 1;
-}
-.estado__img {
-    position: absolute;
-    top: 10vh;
-    left: 20vw;
-    transform: scale(.4);
-    display: none;
-   z-index: 0;
-}
-#covides{
-    transform: scale(.6);
+    #covides{
+        transform: scale(.3);
+    }
 }
