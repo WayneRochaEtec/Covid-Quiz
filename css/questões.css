@@ -183,5 +183,7 @@ b:hover {
     }
     #covides{
         transform: scale(.3);
+        top: -1vh;
+        left: -55vw;
     }
 }
