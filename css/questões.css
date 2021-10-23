@@ -175,9 +175,7 @@ b:hover {
         font-size: .8em;
     }
     .estado__img {
-        position: absolute;
-        top: -5vh;
-        left: -85vw;
+        left: -50vw;
         transform: scale(.2);
         display: none;
     }

@@ -9,13 +9,12 @@
 }
 
 div {
-	width: 900px;
+	width: 70vw;
 	background-color: #FFFFFF;
 	margin: 40px auto 10px auto;
 	padding: 40px;
 	border-radius: 1em;
 }
-
 div h2{
 	font-family: arial, sans-serif;
 	font-size: 24pt;
@@ -33,7 +32,11 @@ img {
 	position: center;	
 	left: 200px;
 	top: 5px;
-	}
+	width: 100%;
+	height: auto;
+	image-rendering: optimizeQuality;
+	aspect-ratio: 16 / 9;
+}
 	
 footer#ropape {
 	clear: both;
